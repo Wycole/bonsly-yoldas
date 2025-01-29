@@ -18,13 +18,15 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<section id="banner">
+				<section class="banner">
 					<div class="inner">
 						<h2>Yoldas</h2>
 						<p>By: Tolga Onay, Yun-Jhu Wang<br />
 						Teamname: Bonsly<br />
 					</div>
 					<a href="#one" class="more scrolly">Learn More</a>
+
+
 				</section>
 
 
@@ -36,124 +38,129 @@
 							<h2>Yoldas<br />
 								- A raytracing rendering engine -
 							</h2>
-							<p>Yoldas, developed based on the Lightwave framework, is the main project for lecture <br />
+							<p>Yoldas, developed based on the Lightwave framework, is the main project for lecture
 								<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics</a> at Saarland University 
-								in winter Semester 24/25. <br />
+								in winter Semester 24/25. 
 								Apart from the basic features, some other implemented features are shown with cases below:
 							</p>
 						</header>
 					</div>
 				</section>
 
+				<!-- <section>
+					<header>
+						<h2>Features</h2>
+					</header>
+					<div class="content">
+						<p><strong>We implemented five different features.</strong> Why we decided to use these five is explained in the following section.</p>
+ -->
+				
+				<section>
+					<header>
+						<h2>YOLDAS <br /> - A raytracing rendering engine - </h2>
+					</header>
+					<div class="content">
+						<p> Yoldas, developed based on the Lightwave framework, is the main project for lecture
+							<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics</a> 
+							at Saarland University in winter Semester 24/25.  <br />
+							Apart from the basic features, some other implemented features are shown with cases below:
+						</p>
+					</div>
+				</section>
+
 				<!-- Section -->
 				
 
-						<!-- Section THINLENS -->
-						<section id="thinlens">
-							<header>
-								<h3>Thin Lens</h3>
-								<p> Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
-									and focal distance, which enables depth of field effects and enhances the realism of our scene.
+					<!-- Section THINLENS -->
+					<section id="thinlens">
+						<header>
+							<h3>Thin Lens</h3>
+							<p> Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
+								and focal distance, which enables depth of field effects and enhances the realism of our scene.
+								
+								The <strong>aperture radius</strong> is the size of the lens opening which controls how much light enters. 
+								A larger aperture results in a shallower depth of field and more blur in out-of-focus areas.
 
-									The <strong>aperture radius</strong> is the size of the lens opening which controls how much light enters. 
-									A larger aperture results in a shallower depth of field and more blur in out-of-focus areas.
-
-									The <strong>focal distance</strong> descibes at which distance the image is sharp. 
-									It defines the focus point with objects closer or farther from it appearing increasingly blurred.
-								</p>
-							</header>
-							<div class="content">
-								<div class="gallery">
-									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
-									<a href="images/pic02.jpg"><img src="images/pic02.jpg" alt="" /></a>
-									<a href="images/pic03.jpg"><img src="images/pic03.jpg" alt="" /></a>
-									<a href="images/pic04.jpg"><img src="images/pic04.jpg" alt="" /></a>
-								</div>
+								The <strong>focal distance</strong> descibes at which distance the image is sharp. 
+								It defines the focus point with objects closer or farther from it appearing increasingly blurred.
+							</p>
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="images/pic02.jpg"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="images/pic03.jpg"><img src="images/pic03.jpg" alt="" /></a>
+								<a href="images/pic04.jpg"><img src="images/pic04.jpg" alt="" /></a>
 							</div>
-						</section>
+						</div>
+					</section>
 
 
-						<!-- Section HALTON SAMPLER-->
-						<section>
-							<header>
-								<h3>Halton Sampler</h3>
-								<p> Halton Sampler is a better random number generator to reduce noise. It generates 
-									low-discrepancy sample points that are more evenly distributed than those produced 
-									by an independent sampler.
-								</p>
-							</header>
-							<div class="content">
-								<div class="gallery">
-									<a href="images/independent_sampler_bunny.jpg"><img src="images/independent_sampler_bunny.jpg" alt="" /></a>
-									<a href="images/halton_sampler_bunny.jpg"><img src="images/halton_sampler_bunny.jpg" alt="" /></a>
-								</div>
+					<!-- Section HALTON SAMPLER-->
+					<section>
+						<header>
+							<h3>Halton Sampler</h3>
+							<p> Halton Sampler is a better random number generator to reduce noise. It generates 
+								low-discrepancy sample points that are more evenly distributed than those produced 									by an independent sampler.
+							</p>
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<a href="images/independent_sampler_bunny.jpg"><img src="images/independent_sampler_bunny.jpg" alt="" /></a>
+								<a href="images/halton_sampler_bunny.jpg"><img src="images/halton_sampler_bunny.jpg" alt="" /></a>
 							</div>
-						</section>
+						</div>
+					</section>
 
 
-						<!-- Section ROUGH DIELECTRIC-->
-						<section>
-							<header>
-								<h3>Rough Dielectric</h3>
-								<p> descriptions for rough dielectric
-								</p>
-							</header>
-							<div class="content">
-								<div class="gallery">
-									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
-								</div>
+					<!-- Section ROUGH DIELECTRIC-->
+					<section>
+						<header>
+							<h3>Rough Dielectric</h3>
+							<p> descriptions for rough dielectric
+							</p>
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
 							</div>
-						</section>
+						</div>
+					</section>
 
 
-						<!-- Section SHADING NORMALS-->
-						<section>
-							<header>
-								<h3>Shading Normals</h3>
-								<p> descriptions for shading normals
-								</p>
-							</header>
-							<div class="content">
-								<div class="gallery">
-									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
-								</div>
+					<!-- Section SHADING NORMALS-->
+					<section>
+						<header>
+							<h3>Shading Normals</h3>
+							<p> descriptions for shading normals
+							</p>							
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
 							</div>
-						</section>
+						</div>
+					</section>
 
-						<!-- Section ALPHA MASKING-->
-						<section>
-							<header>
-								<h3>Alpha Masking</h3>
-								<p> descriptions for alpha masking
-								</p>
-							</header>
-							<div class="content">
-								<div class="gallery">
-									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
-								</div>
+					<!-- Section ALPHA MASKING-->
+					<section>
+						<header>
+							<h3>Alpha Masking</h3>
+							<p> descriptions for alpha masking
+							</p>							
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
 							</div>
-						</section>
+						</div>
+					</section>
 
 							
 						<!-- </div>
 				</section> -->
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>About</h2>
-						</header>
-						<div class="content">
-							<p><strong>Julian Tonner and Philipp Ziegler</strong> are computer science students at Saarland University.
-							<br>This project was part of the Computer Graphics 1 course.</p>
-							
-							<!--<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
-							</ul>
-							-->
-						</div>
-					</section>
+
 
 					<!-- <section id="footer">
 						<ul class="copyright">
