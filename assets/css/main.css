@@ -72,6 +72,49 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+
+.image-compare-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    height: auto;
+    overflow: hidden;
+    cursor: ew-resize;
+}
+
+.before,
+.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+.before {
+    z-index: 1;
+}
+
+.after {
+    z-index: 2;
+    clip-path: inset(0 50% 0 0); /* Start with 50% split */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background: white;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3998,43 +4041,3 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
-
-	/* image spliter */
-
-	.image-compare-container {
-		position: relative;
-		width: 100%;
-		max-width: 500px;
-		overflow: hidden;
-	}
-	
-	.image-wrapper {
-		position: relative;
-		width: 100%;
-	}
-	
-	.before,
-	.after {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		transition: none;
-	}
-	
-	.after {
-		clip-path: inset(0 50% 0 0); /* Initial split at 50% */
-	}
-	
-	.slider {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 5px;
-		height: 100%;
-		background: #fff;
-		cursor: ew-resize;
-		transform: translateX(-50%);
-		z-index: 2;
-	}
-	
