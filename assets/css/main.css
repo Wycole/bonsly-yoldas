@@ -25,6 +25,15 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
+	middle {
+		display: flex;              /* Use flexbox to align the content */
+		justify-content: center;    /* Horizontally center the content */
+		align-items: center;        /* Optionally, vertically center the content (if needed) */
+		text-align: center;         /* Center text inside the section */
+		padding: 20px;              /* Optional: Add some padding around the content */
+	}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
