@@ -1,171 +1,179 @@
 <!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Name of the final scene</title>
+		<title>Name of final scene</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="landing is-preload">
+	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Yoldas</h2>
-							<p>By: Tolga Onay, Yun-Jhu Wang<br />
-							Teamname: Bonsly<br />
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Yoldas<br />
-									- A raytracing rendering engine -
-								</h2>
-								<p>Yoldas, developed based on the Lightwave framework, is the main project for lecture <br />
-									<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics</a> at Saarland University 
-									in winter Semester 24/25. <br />
-									Apart from the basic features, some other implemented features are shown with cases below:
-								</p>
-							</header>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
+				<section id="banner">
+					<div class="inner">
+						<h2>Yoldas</h2>
+						<p>By: Tolga Onay, Yun-Jhu Wang<br />
+						Teamname: Bonsly<br />
+					</div>
+					<a href="#one" class="more scrolly">Learn More</a>
+				</section>
 
 
-						<!-- THIN LENS -->
+				<!-- Section -->
 
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Thin Lens</h2>
-								<p>Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
-									and focal distance, which enables depth of field effects and enhances the realism of our scene. 
-									<br />
+				<section id="one" class="wrapper style1 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Yoldas<br />
+								- A raytracing rendering engine -
+							</h2>
+							<p>Yoldas, developed based on the Lightwave framework, is the main project for lecture <br />
+								<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics</a> at Saarland University 
+								in winter Semester 24/25. <br />
+								Apart from the basic features, some other implemented features are shown with cases below:
+							</p>
+						</header>
+					</div>
+				</section>
+
+				<!-- Section -->
+				
+
+						<!-- Section THINLENS -->
+						<section id="thinlens">
+							<header>
+								<h3>Thin Lens</h3>
+								<p> Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
+									and focal distance, which enables depth of field effects and enhances the realism of our scene.
+
 									The <strong>aperture radius</strong> is the size of the lens opening which controls how much light enters. 
 									A larger aperture results in a shallower depth of field and more blur in out-of-focus areas.
-									<br />
+
 									The <strong>focal distance</strong> descibes at which distance the image is sharp. 
 									It defines the focus point with objects closer or farther from it appearing increasingly blurred.
 								</p>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="images/pic02.jpg"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="images/pic03.jpg"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="images/pic04.jpg"><img src="images/pic04.jpg" alt="" /></a>
+								</div>
 							</div>
 						</section>
 
 
-						<!-- HALTON SAMPLER -->
-
-						<!-- <section class="spotlight">
-
+						<!-- Section HALTON SAMPLER-->
+						<section>
+							<header>
+								<h3>Halton Sampler</h3>
+								<p> Halton Sampler is a better random number generator to reduce noise. It generates 
+									low-discrepancy sample points that are more evenly distributed than those produced 
+									by an independent sampler.
+								</p>
+							</header>
 							<div class="content">
 								<div class="gallery">
 									<a href="images/independent_sampler_bunny.jpg"><img src="images/independent_sampler_bunny.jpg" alt="" /></a>
 									<a href="images/halton_sampler_bunny.jpg"><img src="images/halton_sampler_bunny.jpg" alt="" /></a>
-
 								</div>
 							</div>
-
-								<h2>Halton Sampler</h2>
-								<p> Halton Sampler is a better random number generator to reduce noise. It allows to generate 
-									low-discrepancy sample points for an arbitrary number of integral dimensions. 
-									This generates a sequence of points that are much more evenly distributed than those 
-									produced by the independent sampler. </p>
-							</div>
-						</section> -->
-
-						<section class="spotlight">
-							<div class="image">
-								<div class="image-compare-container">
-									<img src="images/independent_sampler_bunny.jpg" alt="Independent" class="before">
-									<img src="images/halton_sampler_bunny.jpg" alt="Halton" class="after">
-									<div class="slider"></div>
-								</div>
-							</div>
-							<div class="content">
-								<h2>Halton Sampler</h2>
-								<p>Halton Sampler is a better random number generator to reduce noise. It generates 
-									low-discrepancy sample points that are more evenly distributed than those produced 
-									by an independent sampler.</p>
-							</div>
 						</section>
-						
-						
 
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Alpha Masking<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Shading Normal  </h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+						<!-- Section ROUGH DIELECTRIC-->
+						<section>
+							<header>
+								<h3>Rough Dielectric</h3>
+								<p> descriptions for rough dielectric
+								</p>
 							</header>
-							<ul class="features">
-								<!-- <li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li> -->
-								<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content"></div>
-								<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content"></div>
-								<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content"></div>
-								<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content"></div>
+							<div class="content">
+								<div class="gallery">
+									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
+								</div>
+							</div>
+						</section>
+
+
+						<!-- Section SHADING NORMALS-->
+						<section>
+							<header>
+								<h3>Shading Normals</h3>
+								<p> descriptions for shading normals
+								</p>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
+								</div>
+							</div>
+						</section>
+
+						<!-- Section ALPHA MASKING-->
+						<section>
+							<header>
+								<h3>Alpha Masking</h3>
+								<p> descriptions for alpha masking
+								</p>
+							</header>
+							<div class="content">
+								<div class="gallery">
+									<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
+								</div>
+							</div>
+						</section>
+
+							
+						<!-- </div>
+				</section> -->
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>About</h2>
+						</header>
+						<div class="content">
+							<p><strong>Julian Tonner and Philipp Ziegler</strong> are computer science students at Saarland University.
+							<br>This project was part of the Computer Graphics 1 course.</p>
+							
+							<!--<ul class="actions">
+								<li><a href="#" class="button primary large">Get Started</a></li>
+								<li><a href="#" class="button large">Learn More</a></li>
 							</ul>
+							-->
 						</div>
 					</section>
 
-				<!-- Footer -->
-					<footer id="footer">
+					<!-- <section id="footer">
 						<ul class="copyright">
-							<li>&copy; Tolga Onay & Yun-Jhu Wang</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; 2024/2025 Tolga Onay & Yun-Jhu Wang</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</footer>
+					</section> -->
+					
+				<ul class="copyright">
+					<li>&copy; 2024/2025 Tolga Onay & Yun-Jhu Wang</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+					
 
-			</div>
+
+
+			</div>   <!-- <div id="wrapper"> -->
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
