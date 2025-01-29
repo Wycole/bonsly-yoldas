@@ -80,4 +80,24 @@
 
 		}
 
+		// image spliter
+		document.addEventListener("DOMContentLoaded", function () {
+			const container = document.querySelector(".image-compare-container");
+			const afterImage = container.querySelector(".after");
+			const slider = container.querySelector(".slider");
+		
+			container.addEventListener("mousemove", function (e) {
+				let rect = container.getBoundingClientRect();
+				let xPos = e.clientX - rect.left;
+				let percentage = (xPos / rect.width) * 100;
+		
+				if (percentage < 0) percentage = 0;
+				if (percentage > 100) percentage = 100;
+		
+				afterImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+				slider.style.left = `${percentage}%`;
+			});
+		});
+		
+
 })(jQuery);

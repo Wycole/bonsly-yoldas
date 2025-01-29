@@ -3997,3 +3997,44 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+	/* image spliter */
+
+	.image-compare-container {
+		position: relative;
+		width: 100%;
+		max-width: 500px;
+		overflow: hidden;
+	}
+	
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+	}
+	
+	.before,
+	.after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: none;
+	}
+	
+	.after {
+		clip-path: inset(0 50% 0 0); /* Initial split at 50% */
+	}
+	
+	.slider {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 5px;
+		height: 100%;
+		background: #fff;
+		cursor: ew-resize;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+	
