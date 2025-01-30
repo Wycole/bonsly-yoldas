@@ -54,14 +54,16 @@
 								<br >
 								The <strong>aperture radius</strong> is the size of the lens which controls how much light to enter. 
 								A larger radius leads to a shallower depth of field and more blur in out-of-focus areas.
-								<br />
-								The <strong>focal distance</strong> descibes at which distance the image is sharp. 
-								It defines the focus point with objects closer or farther from it appearing increasingly blurred.
+								And the <strong>focal distance</strong> descibes at which distance the image is sharp. 
 								<br />
 								<br>
 								See more in the <a href="https://pbr-book.org/3ed-2018/Camera_Models/Realistic_Cameras#">PBRT</a> book about realistic cameras.
 								<br>
-								Add pictures descriptions
+								Picture from left top to right bottom: <br />
+								• with perspective camera <br/>
+								• thin lens camera with radius = 0.05, focal distance = 3 <br/>
+								• thin lens camera with higher focal distance (7) <br/>
+								• thin lensa camera with higher radius (0.09)
 							</p>
 						</header>
 						<div class="content">
@@ -78,7 +80,7 @@
 					<!-- Section HALTON SAMPLER-->
 					<section>
 						<header>
-							<h3>Halton Sampler</h3>
+							<h2>Halton Sampler</h2>
 							<p> Halton Sampler is a better random number generator to reduce noise. It generates 
 								low-discrepancy sample points that are more evenly distributed than those produced by an independent sampler
 								, which generates number with a simple pseudo-random generator.
