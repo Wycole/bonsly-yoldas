@@ -51,20 +51,25 @@
 							<h3>Thin Lens</h3>
 							<p> Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
 								and focal distance, which enables depth of field effects and enhances the realism of our scene.
-								<br />
-								The <strong>aperture radius</strong> is the size of the lens opening which controls how much light enters. 
-								A larger aperture results in a shallower depth of field and more blur in out-of-focus areas.
+								<br >
+								The <strong>aperture radius</strong> is the size of the lens which controls how much light to enter. 
+								A larger radius leads to a shallower depth of field and more blur in out-of-focus areas.
 								<br />
 								The <strong>focal distance</strong> descibes at which distance the image is sharp. 
 								It defines the focus point with objects closer or farther from it appearing increasingly blurred.
+								<br />
+								<br>
+								See more in the <a href="https://pbr-book.org/3ed-2018/Camera_Models/Realistic_Cameras#">PBRT</a> book about realistic cameras.
+								<br>
+								Add pictures descriptions
 							</p>
 						</header>
 						<div class="content">
 							<div class="gallery">
-								<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
-								<a href="images/pic02.jpg"><img src="images/pic02.jpg" alt="" /></a>
-								<a href="images/pic03.jpg"><img src="images/pic03.jpg" alt="" /></a>
-								<a href="images/pic04.jpg"><img src="images/pic04.jpg" alt="" /></a>
+								<a href="images/camera_perspective.jpg"><img src="images/camera_perspective.jpg" alt="" /></a>
+								<a href="images/camera_thinlens.jpg"><img src="images/camera_thinlens.jpg" alt="" /></a>
+								<a href="images/camera_thinlens_focalDis_7.jpg"><img src="images/camera_thinlens_focalDis_7.jpg" alt="" /></a>
+								<a href="images/camera_thinlens_radius_0.09.jpg"><img src="images/camera_thinlens_radius_0.09.jpg" alt="" /></a>
 							</div>
 						</div>
 					</section>
@@ -75,13 +80,21 @@
 						<header>
 							<h3>Halton Sampler</h3>
 							<p> Halton Sampler is a better random number generator to reduce noise. It generates 
-								low-discrepancy sample points that are more evenly distributed than those produced by an independent sampler.
+								low-discrepancy sample points that are more evenly distributed than those produced by an independent sampler
+								, which generates number with a simple pseudo-random generator.
+								<br>
+								See more in the <a href="https://www.pbr-book.org/4ed/Sampling_and_Reconstruction/Halton_Sampler">PBRT</a> book.
+								<br>
+								The left images are with the independent sampler, and the right are with Halton sampler with 128 sample points. 
+								You can see the difference in details with the lower images.
 							</p>
 						</header>
 						<div class="content">
 							<div class="gallery">
-								<a href="images/independent_sampler_bunny.jpg"><img src="images/independent_sampler_bunny.jpg" alt="" /></a>
-								<a href="images/halton_sampler_bunny.jpg"><img src="images/halton_sampler_bunny.jpg" alt="" /></a>
+								<a href="images/independent_bunny.jpg"><img src="images/independent_bunny.jpg" alt="" /></a>
+								<a href="images/halton_bunny.jpg"><img src="images/halton_bunny.jpg" alt="" /></a>
+								<a href="images/independent_bunny_detail.jpg"><img src="images/independent_bunny_detail.jpg" alt="" /></a>
+								<a href="images/halton_bunny_detail.jpg"><img src="images/halton_bunny_detail.jpg" alt="" /></a>
 							</div>
 						</div>
 					</section>
