@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Name of final scene</title>
+		<title>yoldas</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -42,7 +42,7 @@
 					</div>
 				</section>
 
-				<!-- Section -->
+				<!-- FINAL SCENE -->
 
 				<section>
 					<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" /></a>
@@ -58,14 +58,15 @@
 					</div>
 				</section>
 
-					<!-- Section THINLENS -->
+					<!-- THIN LENS -->
 					<section id="thinlens">
 						<header>
 							<h2>Thin Lens</h2>
 							<p> Thin lens camera is the alternative camera of perspective camera. It has the adjustable aperture radius 
 								and focal distance, which enables depth of field effects and enhances the realism of our scene.
-								See more in the <a href="https://pbr-book.org/3ed-2018/Camera_Models/Realistic_Cameras#">PBRT</a> 
-								book about realistic cameras.
+								There are more about realistic cameras here in the 
+								<a href="https://pbr-book.org/3ed-2018/Camera_Models/Realistic_Cameras#">PBRT</a> 
+								book.
 								<br >
 								The <strong>aperture radius</strong> is the size of the lens which controls how much light to enter. 
 								A larger radius leads to a shallower depth of field and more blur in out-of-focus areas.
@@ -90,15 +91,14 @@
 					</section>
 
 
-					<!-- Section HALTON SAMPLER-->
+					<!-- HALTON SAMPLER-->
 					<section>
 						<header>
 							<h2>Halton Sampler</h2>
 							<p> Halton Sampler is a better random number generator to reduce noise. It generates 
 								low-discrepancy sample points that are more evenly distributed than those produced by an independent sampler
 								, which generates number with a simple pseudo-random generator.
-								<br>
-								See more in the <a href="https://www.pbr-book.org/4ed/Sampling_and_Reconstruction/Halton_Sampler">PBRT</a> book.
+								The <a href="https://www.pbr-book.org/4ed/Sampling_and_Reconstruction/Halton_Sampler">PBRT</a> book helped a lots.
 								<br />
 								<br>
 								The left images are with the independent sampler, and the right are with Halton sampler with 128 sample points. 
@@ -116,7 +116,7 @@
 					</section>
 					
 
-					<!-- Section DENOSNIG -->
+					<!-- DENOSNIG -->
 					<section>
 						<header>
 							<h2>Denoising</h2>
@@ -131,7 +131,7 @@
 					</section>
 
 
-					<!-- Section ROUGH DIELECTRIC-->
+					<!-- ROUGH DIELECTRIC-->
 					<section>
 						<header>
 							<h2>Rough Dielectric</h2>
@@ -148,11 +148,13 @@
 					</section>
 
 
-					<!-- Section SHADING NORMALS-->
+					<!-- SHADING NORMALS-->
 					<section>
 						<header>
 							<h2>Shading Normals</h2>
-							<p> descriptions for shading normals
+							<p> There are some textures contain extremely fine-grained details, which will become very 
+								expensive for our renderer if modeled directly. y applying normal maps, 
+								we can simulate these small surface features without increasing the amount of polygon too much.
 							</p>							
 						</header>
 						<div class="content">
@@ -162,11 +164,14 @@
 						</div>
 					</section>
 
-					<!-- Section ALPHA MASKING-->
+					<!-- ALPHA MASKING-->
 					<section>
 						<header>
 							<h2>Alpha Masking</h2>
-							<p> descriptions for alpha masking
+							<p> Alpha masking simulates complex structures more efficiently without overloading geometry. 
+								It is ideal for objects with small and details features.
+								Instead of using a detailed mesh to represent objects like leaves, alpha masks selectively 
+								remove parts of the meshes. If the alpha value is 0 (transparent), the ray passes through. 
 							</p>							
 						</header>
 						<div class="content">
