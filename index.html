@@ -35,9 +35,10 @@
 					<div class="content">
 						<p> Yoldas, developed based on the Lightwave framework, is the main project for lecture
 							<a href="https://graphics.cg.uni-saarland.de/courses/cg1-2024/index.html">Computer Graphics</a> 
-							at Saarland University in winter Semester 24/25.  
+							at Saarland University in winter semester 24/25.  
 							<br />
-							Apart from the basic features, some other implemented features are shown with cases below:
+							In the following, we first show the final scene we rendered and then
+							some other implemented features, apart from the basic features, are shown with cases below:
 						</p>
 					</div>
 				</section>
@@ -54,8 +55,6 @@
 					<a href="images/pic01.jpg"><img src="images/pic01.jpg" alt="" class="center-image" /></a>
 				</section>
 				
-				
-				
 
 				<section>
 					<header>
@@ -70,6 +69,7 @@
 						</p>
 					</div>
 				</section>
+
 
 					<!-- THIN LENS -->
 					<section id="thinlens">
@@ -112,7 +112,8 @@
 								low-discrepancy sample points that are more evenly distributed than those produced by an independent sampler
 								, which generates number with a simple pseudo-random generator. 
 								<br />
-								We decided to do this feature because it looks pretty useful. The <a href="https://www.pbr-book.org/4ed/Sampling_and_Reconstruction/Halton_Sampler">PBRT</a> book helped a lots.
+								We decided to do this feature because it looks pretty useful. 
+								The <a href="https://www.pbr-book.org/4ed/Sampling_and_Reconstruction/Halton_Sampler">PBRT</a> book helped a lots.
 								<br />
 								<br>
 								The left images are with the independent sampler, and the right are with Halton sampler with 128 sample points. 
@@ -121,10 +122,10 @@
 						</header>
 						<div class="content">
 							<div class="gallery">
-								<a href="images/independent_bunny.jpg"><img src="images/independent_bunny.jpg" alt="" /></a>
-								<a href="images/halton_bunny.jpg"><img src="images/halton_bunny.jpg" alt="" /></a>
-								<a href="images/independent_bunny_detail.jpg"><img src="images/independent_bunny_detail.jpg" alt="" /></a>
-								<a href="images/halton_bunny_detail.jpg"><img src="images/halton_bunny_detail.jpg" alt="" /></a>
+								<a href="images/sampler_independent_bunny.png"><img src="images/sampler_independent_bunny.png" alt="" /></a>						
+								<a href="images/sampler_halton_bunny.png"><img src="images/sampler_halton_bunny.png" alt="" /></a>
+								<a href="images/sampler_independent_detail.png"><img src="images/sampler_independent_detail.png" alt="" /></a>
+								<a href="images/sampler_halton_detail.png"><img src="images/sampler_halton_detail.png" alt="" /></a>
 							</div>
 						</div>
 					</section>
@@ -152,11 +153,14 @@
 							<p> Rough dielectric is another type of BSDF. With this feature, we can simulate frosted glass 
 								and other type of dielectrics by composing different value of roughness. 
 								Other factors such as ior, reflectance, and transmittance will decide the material of the surface.
+								<br>
+								The images on the right are the bunny with different reflectance and transmittance values.
 							</p>
 						</header>
 						<div class="content">
 							<div class="gallery">
-								<a href="images/roughDielectric_bunny.jpg"><img src="images/roughDielectric_bunny.jpg" alt="" /></a>
+								<a href="images/roughDielectric_frosted_bunny.png"><img src="images/roughDielectric_frosted_bunny.png" alt="" /></a>
+								<a href="images/roughDielectric_glass_bunny.png"><img src="images/roughDielectric_glass_bunny.png" alt="" /></a>
 							</div>
 						</div>
 					</section>
@@ -167,7 +171,7 @@
 						<header>
 							<h2>Shading Normals</h2>
 							<p> There are some textures contain extremely fine-grained details, which will become very 
-								expensive for our renderer if modeled directly. y applying normal maps, 
+								expensive for our renderer if modeled directly. By applying normal maps, 
 								we can simulate these small surface features without increasing the amount of polygon too much.
 							</p>							
 						</header>
