@@ -26,6 +26,11 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 
+	.center-image {
+		display: block;
+		margin: 0 auto;
+	}
+	
 	.middle {
 		display: flex;              /* Use flexbox to align the content */
 		justify-content: center;    /* Horizontally center the content */
