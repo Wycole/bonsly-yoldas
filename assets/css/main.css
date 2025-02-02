@@ -27,9 +27,9 @@ section, summary, time, mark, audio, video {
 
 
 	.center-image {
-		display: block;
-		margin: 0 auto;
+		width: 75%;
 	}
+	
 	
 	.middle {
 		display: flex;              /* Use flexbox to align the content */
